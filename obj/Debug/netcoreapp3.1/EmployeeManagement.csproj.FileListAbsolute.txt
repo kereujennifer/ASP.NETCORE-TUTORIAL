@@ -54,3 +54,4 @@ C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\netcoreapp3.1\EmployeeManag
 C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\netcoreapp3.1\EmployeeManagement.csproj.CopyComplete
 C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
