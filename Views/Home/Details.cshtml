@@ -1,0 +1,22 @@
+﻿@model EmployeeManagement.ViewModels.HomeDetailsViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Employee Details";
+}
+
+    <h3>@Model.PageTitle.</h3>
+
+     
+        <div>
+        Name :@Model.Employee.Name
+        </div>
+    <div>
+        Email :@Model.Employee.Email
+    </div>
+    <div>
+        Department :@Model.Employee.Department
+    </div>
+    @section Scripts{
+    <script src="~/js/customscript.js"></script>
+    }
