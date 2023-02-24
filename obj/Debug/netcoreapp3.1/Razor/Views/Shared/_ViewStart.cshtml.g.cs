@@ -27,7 +27,7 @@ using EmployeeManagement.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3c3fd35b47a40a40d5d4b58f8ae85152e33a8326", @"/Views/Shared/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7b1b099d611b92c7cada047478ff9597b4580632", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5ca3cbb4a66caa5dd09ac2dec2f9dd5a49945d5e", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
