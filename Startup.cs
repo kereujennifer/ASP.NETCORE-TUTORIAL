@@ -47,10 +47,10 @@ namespace EmployeeManagement
                 routes.MapRoute("default", "{controller=home}/{action=index}/{id?}");
             
             });
-             
 
 
-           
+
+
 
         }
     }

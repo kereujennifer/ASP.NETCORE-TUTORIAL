@@ -1,6 +1,8 @@
 ﻿namespace EmployeeManagement.Controllers
 {
-    public class Department
+    public class DepartmentsController
     {
+
+
     }
 }
