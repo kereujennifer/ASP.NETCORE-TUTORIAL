@@ -57,3 +57,4 @@ C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\netcoreapp3.1\Razor\Views\S
 C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ViewStart.cshtml.g.cs
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\netcoreapp3.1\Razor\Views\Home\Create.cshtml.g.cs
