@@ -43,9 +43,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "IppDotNetSdkForQuickBooksApiV3": {
+              "target": "Package",
+              "version": "[14.6.3.4, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.0-preview.1.23111.4, )"
+            },
+            "Microsoft.Graph.Beta": {
+              "target": "Package",
+              "version": "[0.47.0-preview, )"
             }
           },
           "imports": [
