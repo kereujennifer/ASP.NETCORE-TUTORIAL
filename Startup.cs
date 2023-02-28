@@ -28,7 +28,7 @@ namespace EmployeeManagement
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContextPool<AppDbContext>(
-                options => options.UseSqlServer(_config.GetConnectionString("EmployeedataConnection")));
+                options => options.UseSqlServer(_config.GetConnectionString("EmployeeDBConnect")));
 
 
             //In netcore 3.0 and above you cannot use Mvc with Default use without putting 0ption EnableEndpointRouting to false 
