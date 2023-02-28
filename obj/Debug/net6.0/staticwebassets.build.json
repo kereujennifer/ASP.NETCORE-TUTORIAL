@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tD53k7/9Udh0YFIbSt6AKFbdkjGNuWIe33lKjQAGQhM=",
+  "Hash": "h9boh52F+Pp9sikYpdz3rcgkOQ8EsPW+GWzAFWNr0Bc=",
   "Source": "EmployeeManagement",
   "BasePath": "_content/EmployeeManagement",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\foo.html"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\aa6bd1b5-6e67-4873-8881-3476109f9e1b_vlcsnap-2020-12-20-11h50m57s343.png",
+      "SourceId": "EmployeeManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\",
+      "BasePath": "_content/EmployeeManagement",
+      "RelativePath": "images/aa6bd1b5-6e67-4873-8881-3476109f9e1b_vlcsnap-2020-12-20-11h50m57s343.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\aa6bd1b5-6e67-4873-8881-3476109f9e1b_vlcsnap-2020-12-20-11h50m57s343.png"
     },
     {
       "Identity": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\banner.png",

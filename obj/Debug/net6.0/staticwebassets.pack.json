@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\foo.html"
     },
     {
+      "Id": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\aa6bd1b5-6e67-4873-8881-3476109f9e1b_vlcsnap-2020-12-20-11h50m57s343.png",
+      "PackagePath": "staticwebassets\\images\\aa6bd1b5-6e67-4873-8881-3476109f9e1b_vlcsnap-2020-12-20-11h50m57s343.png"
+    },
+    {
       "Id": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\banner.png",
       "PackagePath": "staticwebassets\\images\\banner.png"
     },
