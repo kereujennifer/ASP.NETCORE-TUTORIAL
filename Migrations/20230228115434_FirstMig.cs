@@ -5,7 +5,7 @@
 namespace EmployeeManagement.Migrations
 {
     /// <inheritdoc />
-    public partial class dtabaset : Migration
+    public partial class FirstMig : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
