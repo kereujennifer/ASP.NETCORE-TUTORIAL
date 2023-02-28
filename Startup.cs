@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,11 +27,13 @@ namespace EmployeeManagement
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContextPool<AppDbContext>(
+                options => options.UseSqlServer(_config.GetConnectionString("EmployeeDBConnection" )));
+
+
             //In netcore 3.0 and above you cannot use Mvc with Default use without putting 0ption EnableEndpointRouting to false 
             services.AddMvc(option => option.EnableEndpointRouting = false);
             // You can use AddSingleton, AddScoped or AddTransient whereby With a scoped service we get the same instance within the scope of a given http request but a new instance across different http requests, with a transient service a new instance is provided every time an instance is requested whether it is in the scope of the same http request or across different http requests and with a singleton service, there is only a single instance. An instance is created, when the service is first requested and that single instance is used by all http requests throughout the application.
-
-
             services.AddTransient<IEmployeeRepository, MockEmployeerepository>();
         }
 
