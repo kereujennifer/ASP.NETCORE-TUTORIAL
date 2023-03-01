@@ -1,5 +1,6 @@
 ﻿using EmployeeManagement.Models;
 using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace EmployeeManagement.ViewModels
@@ -18,6 +19,6 @@ namespace EmployeeManagement.ViewModels
 
         public Dept? Department { get; set; }
 
-        public IFormFile Photo { get; set; }
+        public List<IFormFile> Photos { get; set; }
     }
 }
