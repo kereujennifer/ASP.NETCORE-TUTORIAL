@@ -1,5 +1,78 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model EmployeeEditViewModel
 @{
-}
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Edit Employee";
+    var photoPath = "~/images/" + (Model.ExistingPhotoPath ?? "nif.png");
+   }
+    <form enctype="multipart/form-data" asp-controller="home" asp-action="edit" method="post" class="mt-3">
+        <input hidden asp-for="Id"/>
+    <input hidden asp-for="ExistingPhotoPath" />
+    
+
+
+    <div class="form-group row">
+        <label asp-for="Name" class="col-sm-2 col-form-label"></label>
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <div class="col-sm-10  mb-3">
+            <input asp-for="Name" class="form-control" placeholder="Name">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Email" class="col-sm-2 col-form-label"></label>
+        <span asp-validation-for="Email" class="text-danger"></span>
+        <div class="col-sm-10  mb-3">
+            <input asp-for="Email" class="form-control" placeholder="Email">
+
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Department" class="col-sm-2 col-form-label  mb-3"></label>
+        <div class="col-sm-10">
+            <select asp-for="Department" class="custom-select mr-sm-2  mb-3"
+                    asp-items="Html.GetEnumSelectList<Dept>()">
+                        <option value="">
+                             Please select
+                        </option>
+                        <span>
+                    <span asp-validation-for="Department" class="text-danger"></span>
+
+                        </span>
+                    </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Photos" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <div class="custom-file">
+                <input asp-for="Photos" class="custom-file-input form-control">
+                <label class="custom-file-label">Click here to change photo</label>
+            </div>
+        </div>
+    </div>
+    <div class=" form-group row col-sm-4 offset-4">
+        <img src="@photoPath" class="imageThumbnail" asp-append-version="true" />
+    </div>
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <span asp-validation-for="Name" class="text-danger"></span>
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a asp-controller="home" asp-action="index" class="btn btn-primary">Cancel</a>
+        </div>
+    </div>
+
+        
+    @section Scripts {
+        <script>
+            $(document).ready(function () {
+                $('.custom-file-input').on("change", function () {
+                    var fileName = $(this).val().split("\\").pop();
+                    $(this).next('.custom-file-label').html(fileName);
+                });
+            });
+        </script>
+    }
+</form>
+
