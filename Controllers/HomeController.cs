@@ -8,7 +8,7 @@ using System.IO;
 
 namespace EmployeeManagement.Controllers
 {
-
+    //Global exception handling in asp net core mvc
     public class HomeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
@@ -30,7 +30,7 @@ namespace EmployeeManagement.Controllers
 
         public ViewResult Details(int? id)
         {
-
+            throw new Exception("Error in details view");
             Employee employee = _employeeRepository.GetEmployee(id.Value);
             if(employee == null)
             {
