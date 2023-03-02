@@ -31,8 +31,14 @@ namespace EmployeeManagement.Controllers
         public ViewResult Details(int? id)
         {
 
+            Employee employee = _employeeRepository.GetEmployee(id.Value);
+            if(employee == null)
+            {
+                Response.StatusCode = 404;
+                return View("EmployeeNotFound", id.Value);
+            }
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel() {
-                Employee = _employeeRepository.GetEmployee(id ?? 1),
+                Employee =employee,
                 PageTitle = "Employee Details"
             };
 
@@ -71,7 +77,7 @@ namespace EmployeeManagement.Controllers
                     if (model.ExistingPhotoPath != null)
                     {
                         string filePath = Path.Combine(hostingEnvironment.WebRootPath,
-                        "img", model.ExistingPhotoPath);
+                        "images", model.ExistingPhotoPath);
                         System.IO.File.Delete(filePath);
                     }
 
@@ -92,7 +98,7 @@ namespace EmployeeManagement.Controllers
             {
                 foreach (IFormFile photo in model.Photos)
                 {
-                    string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "img");
+                    string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
                     uniqueFileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
                     string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                     using (var fileStream = new FileStream(filePath, FileMode.Create))
