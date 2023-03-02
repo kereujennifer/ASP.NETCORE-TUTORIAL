@@ -47,6 +47,14 @@
               "target": "Package",
               "version": "[14.6.3.4, )"
             },
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNet.Razor": {
+              "target": "Package",
+              "version": "[3.2.9, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.0-preview.1.23111.4, )"
@@ -59,7 +67,11 @@
             },
             "Microsoft.Graph.Beta": {
               "target": "Package",
-              "version": "[0.47.0-preview, )"
+              "version": "[5.20.0-preview, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             }
           },
           "imports": [
