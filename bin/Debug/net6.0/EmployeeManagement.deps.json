@@ -14,6 +14,9 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.1.23111.4",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0-preview.1.23111.4",
           "Microsoft.Graph.Beta": "5.20.0-preview",
+          "NLog": "5.1.2",
+          "NLog.Extensions.Logging": "5.2.2",
+          "NLog.Web.AspNetCore": "5.2.2",
           "System.Net.Http": "4.3.4"
         },
         "runtime": {
@@ -741,6 +744,38 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.0.2.21924"
+          }
+        }
+      },
+      "NLog/5.1.2": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.2.1561"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/5.2.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0-preview.1.23110.8",
+          "Microsoft.Extensions.Logging": "8.0.0-preview.1.23110.8",
+          "NLog": "5.1.2"
+        },
+        "runtime": {
+          "lib/net6.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.2.2.309"
+          }
+        }
+      },
+      "NLog.Web.AspNetCore/5.2.2": {
+        "dependencies": {
+          "NLog.Extensions.Logging": "5.2.2"
+        },
+        "runtime": {
+          "lib/net6.0/NLog.Web.AspNetCore.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.2.2.821"
           }
         }
       },
@@ -1947,6 +1982,27 @@
       "sha512": "sha512-znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
+    "NLog/5.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JfQY93ure3IPVTN3eabBewBGvrcXcWIlaesFEXdy5UzIymfIT9yCgLISYtM0cOhjWziIaUr/6Z9NC2RwtjwrsQ==",
+      "path": "nlog/5.1.2",
+      "hashPath": "nlog.5.1.2.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/5.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V6sd+0Hrk2XlU//XbUizFYTE8Hf8+xFkhi81shIhsKl4tvWFUYmjBY/zBy/wlQCt0K6mfseaEKnayRJVhIz5Iw==",
+      "path": "nlog.extensions.logging/5.2.2",
+      "hashPath": "nlog.extensions.logging.5.2.2.nupkg.sha512"
+    },
+    "NLog.Web.AspNetCore/5.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0Qa6V7LXgbWNxYdZDLcQz/TjGrSfx32XThxAL+xoAtjplC2uCIhy27WiMIjznuMAJR3zjElIiYzMmPSsQ4LZSQ==",
+      "path": "nlog.web.aspnetcore/5.2.2",
+      "hashPath": "nlog.web.aspnetcore.5.2.2.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",

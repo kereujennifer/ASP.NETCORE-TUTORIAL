@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kGGBkBqF0qp23VVi78Fw62uZNVkrjkWhTMmk6jFZpr2sekh/re4bFuklXbfNeIx6YcFX5BHMHmuzqqT7Vw1iKg==",
+  "dgSpecHash": "ExsSeaBiu0QRyoDxxBqEHDpjHGQZoXj9nXNZuD9RbOVL7+cXLSXr5x2Nb3wGbjONi1D3XcpWRB7Hox3AZMCajQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\EmployeeManagement.csproj",
   "expectedPackageFiles": [
@@ -65,6 +65,9 @@
     "C:\\Users\\hp\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\nlog\\5.1.2\\nlog.5.1.2.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\nlog.extensions.logging\\5.2.2\\nlog.extensions.logging.5.2.2.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\nlog.web.aspnetcore\\5.2.2\\nlog.web.aspnetcore.5.2.2.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

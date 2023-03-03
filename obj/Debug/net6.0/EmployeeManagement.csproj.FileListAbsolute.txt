@@ -128,3 +128,7 @@ C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\net6.0\refint\EmployeeManag
 C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\net6.0\EmployeeManagement.pdb
 C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\net6.0\EmployeeManagement.genruntimeconfig.cache
 C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\net6.0\ref\EmployeeManagement.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\nlog.config
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\NLog.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\NLog.Web.AspNetCore.dll

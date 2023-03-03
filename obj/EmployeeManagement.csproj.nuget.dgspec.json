@@ -69,6 +69,18 @@
               "target": "Package",
               "version": "[5.20.0-preview, )"
             },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Net.Http": {
               "target": "Package",
               "version": "[4.3.4, )"
