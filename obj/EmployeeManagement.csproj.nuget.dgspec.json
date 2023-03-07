@@ -55,6 +55,14 @@
               "target": "Package",
               "version": "[3.2.9, )"
             },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.0-preview.1.23111.4, )"
@@ -68,6 +76,10 @@
             "Microsoft.Graph.Beta": {
               "target": "Package",
               "version": "[5.20.0-preview, )"
+            },
+            "Microsoft.Web.Infrastructure": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             },
             "NLog": {
               "target": "Package",

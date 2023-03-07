@@ -2,6 +2,7 @@ using EmployeeManagement.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -35,6 +36,8 @@ namespace EmployeeManagement
             services.AddMvc(option => option.EnableEndpointRouting = false);
             // You can use AddSingleton, AddScoped or AddTransient whereby With a scoped service we get the same instance within the scope of a given http request but a new instance across different http requests, with a transient service a new instance is provided every time an instance is requested whether it is in the scope of the same http request or across different http requests and with a singleton service, there is only a single instance. An instance is created, when the service is first requested and that single instance is used by all http requests throughout the application.
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>();
         }
 
 
@@ -53,6 +56,7 @@ namespace EmployeeManagement
             }
 
             app.UseStaticFiles();
+            app.UseAuthentication();
             //app.UseMvcWithDefaultRoute();
             app.UseMvc(routes =>
             {

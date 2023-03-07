@@ -1,3 +1,4 @@
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\nlog.config
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\appsettings.json
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\libman.json
@@ -70,6 +71,9 @@ C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Microsoft.Web.Infras
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Mono.TextTemplating.dll
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\NLog.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Serilog.dll
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Serilog.Enrichers.Environment.dll
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Serilog.Enrichers.Thread.dll
@@ -128,7 +132,8 @@ C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\net6.0\refint\EmployeeManag
 C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\net6.0\EmployeeManagement.pdb
 C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\net6.0\EmployeeManagement.genruntimeconfig.cache
 C:\Users\hp\source\repos\Asp.Net-Tutorials\obj\Debug\net6.0\ref\EmployeeManagement.dll
-C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\nlog.config
-C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\NLog.dll
-C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\NLog.Extensions.Logging.dll
-C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

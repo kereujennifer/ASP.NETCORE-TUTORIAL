@@ -25,8 +25,16 @@
       "PackagePath": "staticwebassets\\images\\3a7ea9cd-93fe-4529-bc73-0fde46417e8a_WhatsApp Image 2023-03-01 at 08.23.521.jpg"
     },
     {
+      "Id": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\5df378ab-8814-4638-a69e-d7e9eeaf5e6d_2022-07-05 (1).png",
+      "PackagePath": "staticwebassets\\images\\5df378ab-8814-4638-a69e-d7e9eeaf5e6d_2022-07-05 (1).png"
+    },
+    {
       "Id": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\6eab9984-4342-42f2-99a1-eca1de28f3df_WhatsApp Image 2023-03-01 at 08.23.52.jpg",
       "PackagePath": "staticwebassets\\images\\6eab9984-4342-42f2-99a1-eca1de28f3df_WhatsApp Image 2023-03-01 at 08.23.52.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\8318dc28-f07d-4a18-839c-8226afbbb0f5_2022-06-22 (2).png",
+      "PackagePath": "staticwebassets\\images\\8318dc28-f07d-4a18-839c-8226afbbb0f5_2022-06-22 (2).png"
     },
     {
       "Id": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\aa6bd1b5-6e67-4873-8881-3476109f9e1b_vlcsnap-2020-12-20-11h50m57s343.png",
@@ -35,6 +43,14 @@
     {
       "Id": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\banner.png",
       "PackagePath": "staticwebassets\\images\\banner.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\c08c54ed-599d-414b-87a2-d1b8810840d0_2022-06-22 (7).png",
+      "PackagePath": "staticwebassets\\images\\c08c54ed-599d-414b-87a2-d1b8810840d0_2022-06-22 (7).png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\c859c50f-c790-4e5e-9072-db21f9693f4e_2022-06-22 (1).png",
+      "PackagePath": "staticwebassets\\images\\c859c50f-c790-4e5e-9072-db21f9693f4e_2022-06-22 (1).png"
     },
     {
       "Id": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\df2d2bd6-eeea-4426-b721-a8c47784082b_nif.png",
