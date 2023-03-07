@@ -77,7 +77,7 @@ namespace EmployeeManagement.Controllers
         }
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(LoginViewModel model)
+        public async Task<IActionResult> Login(LoginViewModel model, string returnUrl)
         {
             if (ModelState.IsValid)
             {
@@ -86,8 +86,16 @@ namespace EmployeeManagement.Controllers
 
             if (result.Succeeded)
                 {
-                    
-                    return RedirectToAction("Index", "Home");
+                    if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+                    {
+                        return Redirect(returnUrl);
+                    }
+                    else
+                    {
+
+                        return RedirectToAction("Index", "Home");
+                    }
+
                 }
             
                     ModelState.AddModelError(string.Empty,"Invalid Login Attempt");
