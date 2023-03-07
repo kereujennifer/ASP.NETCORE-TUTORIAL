@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿
+@inject SignInManager<IdentityUser> signInManger;
+
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -43,9 +47,27 @@
                     </ul>
                    @* in bootstrap5 ml has been changed to ms and mr to me*@
                 <ul class="navbar-nav ms-auto">
+                    @if
+                    (signInManger.IsSignedIn(User))
+                    {
+                        <li class="nav-item">
+                            <form method="post" asp-controller="account" asp-action="logout">
+                                <button type="submit" style="width:auto"
+                                        class="nav-link btn btn-link py-0">
+                                    Logout @User.Identity.Name
+                                </button>
+                            </form>
+                        </li>
+                    }else{
                     <li class="nav-item">
                         <a class="nav-link" asp-controller="account" asp-action="register">Register</a>
                     </li>
+                    <li class="nav-item">
+                <a class="nav-link" asp-controller="account" asp-action="login">
+                    Login
+                </a>
+            </li>
+                    }
                 </ul>
             </div>
         </nav>
