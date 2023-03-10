@@ -48,6 +48,9 @@
                 <h5 class="card-title">None at the moment</h5>
             }
         </div>
-       
+        <div class="card-footer">
+            <a asp-action="EditUsersInRole" asp-controller="administration" asp-route-roleId="@Model.Id "class="btn btn-primary" style="width:auto">Add or remove Users</a>
+            
+        </div>
     </div>
 </form>

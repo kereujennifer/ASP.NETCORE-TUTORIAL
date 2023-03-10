@@ -15,6 +15,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.1.23111.4",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0-preview.1.23111.4",
+          "Microsoft.Exchange.WebServices": "2.2.0",
           "Microsoft.Graph.Beta": "5.20.0-preview",
           "Microsoft.Web.Infrastructure": "2.0.0",
           "NLog": "5.1.2",
@@ -463,6 +464,18 @@
       "Microsoft.EntityFrameworkCore.Tools/8.0.0-preview.1.23111.4": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "8.0.0-preview.1.23111.4"
+        }
+      },
+      "Microsoft.Exchange.WebServices/2.2.0": {
+        "runtime": {
+          "lib/40/Microsoft.Exchange.WebServices.Auth.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.913.0"
+          },
+          "lib/40/Microsoft.Exchange.WebServices.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.913.15"
+          }
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/8.0.0-preview.1.23110.8": {
@@ -2009,6 +2022,13 @@
       "sha512": "sha512-tbgQHI/eatIcEOyXtaSb4vv2HIlZHDfdlDhYFIa9TeAmIB9k/0G3q1nrIeExVQ2kVMkAu/vbX9TlQU14otfCxQ==",
       "path": "microsoft.entityframeworkcore.tools/8.0.0-preview.1.23111.4",
       "hashPath": "microsoft.entityframeworkcore.tools.8.0.0-preview.1.23111.4.nupkg.sha512"
+    },
+    "Microsoft.Exchange.WebServices/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NlkaTD0uWtg9VbiWq0VDWMBPzHFknH3tmstrxt0acrT09LBGqATTjRpsGOODz6tUdX7/dehBinxsf75U5Uw/+A==",
+      "path": "microsoft.exchange.webservices/2.2.0",
+      "hashPath": "microsoft.exchange.webservices.2.2.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/8.0.0-preview.1.23110.8": {
       "type": "package",

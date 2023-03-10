@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1M+QqHQD24/KvwvZ3fU/5abMNAg7EBH7GbinJn57JxFIDOBNs9EQAx0zrkIUTEHC6bd/DyocFNpGQmeocvXXUw==",
+  "dgSpecHash": "47WFzp5W7iEJyM4pTjpDyX1tV7XyNbjB8MqI9hMDe/zUox9QgD17/crrwB0hFqQfTwYNkvMPnkI/qxQJLZ45GA==",
   "success": true,
   "projectFilePath": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\EmployeeManagement.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.0-preview.1.23111.4\\microsoft.entityframeworkcore.relational.8.0.0-preview.1.23111.4.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.0-preview.1.23111.4\\microsoft.entityframeworkcore.sqlserver.8.0.0-preview.1.23111.4.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.0-preview.1.23111.4\\microsoft.entityframeworkcore.tools.8.0.0-preview.1.23111.4.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.exchange.webservices\\2.2.0\\microsoft.exchange.webservices.2.2.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0-preview.1.23110.8\\microsoft.extensions.caching.abstractions.8.0.0-preview.1.23110.8.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0-preview.1.23110.8\\microsoft.extensions.caching.memory.8.0.0-preview.1.23110.8.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.configuration\\2.2.0\\microsoft.extensions.configuration.2.2.0.nupkg.sha512",
@@ -210,6 +211,16 @@
       "warningLevel": 1,
       "message": "Package 'Microsoft.AspNet.WebPages 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebPages",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Exchange.WebServices 2.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Exchange.WebServices",
       "targetGraphs": [
         "net6.0"
       ]
