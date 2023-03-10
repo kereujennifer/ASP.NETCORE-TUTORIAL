@@ -5,13 +5,13 @@
         ViewBag.Title = "Employee List"; 
     }
 
-    
-    <div class="card-deck">
+
+<div class="card-group">
         @foreach (var employee in Model)
         {
         var photoPath = "~/images/" + (employee.PhotoPath ?? "nif.png");
 
-            <div class="card m-3">
+        <div class="card m-sm-auto">
                 <div class="card-header">
                     <h3>@employee.Name</h3>
                 </div>
