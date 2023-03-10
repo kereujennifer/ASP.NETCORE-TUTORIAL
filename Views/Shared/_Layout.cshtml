@@ -1,5 +1,5 @@
 ﻿
-@inject SignInManager<ApplicationUser> signInManger;
+@inject SignInManager<ApplicationUser> signInManager;
 
 
 <!DOCTYPE html>
@@ -48,11 +48,17 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-controller="home" asp-action="create">Create</a>
                     </li>
-                    </ul>
+                    @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Administration" asp-action="listroles">Manage Roles</a>
+                        </li>
+                    }
+                </ul>
                    @* in bootstrap5 ml has been changed to ms and mr to me*@
                 <ul class="navbar-nav ms-auto">
                     @if
-                    (signInManger.IsSignedIn(User))
+                    (signInManager.IsSignedIn(User))
                     {
                         <li class="nav-item">
                             <form method="post" asp-controller="account" asp-action="logout">

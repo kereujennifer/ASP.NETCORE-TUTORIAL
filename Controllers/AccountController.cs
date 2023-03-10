@@ -121,5 +121,11 @@ namespace EmployeeManagement.Controllers
             }
             return View(model);
         }
+        [HttpGet]
+     //Dry policy .No need to use allowanonymous
+        public IActionResult AccessDenied()
+        {
+        return View();  
+        }
     }
 }

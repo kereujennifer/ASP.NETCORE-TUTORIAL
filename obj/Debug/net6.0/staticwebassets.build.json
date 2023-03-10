@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yrzSI+Uk40LDipRJFRfM1gZav2QVQVASaZq5RAavvvo=",
+  "Hash": "+5nP2YKzbPJRFnbKxHkIlVAu8PSWJedsAuQRkxJqveI=",
   "Source": "EmployeeManagement",
   "BasePath": "_content/EmployeeManagement",
   "Mode": "Default",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\df2d2bd6-eeea-4426-b721-a8c47784082b_nif.png"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\forbidden.jpg",
+      "SourceId": "EmployeeManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\",
+      "BasePath": "_content/EmployeeManagement",
+      "RelativePath": "images/forbidden.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\forbidden.jpg"
     },
     {
       "Identity": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\nif.png",
