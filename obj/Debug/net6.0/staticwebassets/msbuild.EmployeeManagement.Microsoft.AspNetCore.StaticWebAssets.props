@@ -80,6 +80,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\foo.html))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\14779082-1c8e-4a5f-addd-5ea8188eb297_Wallpaper.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EmployeeManagement</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EmployeeManagement</BasePath>
+      <RelativePath>images/14779082-1c8e-4a5f-addd-5ea8188eb297_Wallpaper.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\14779082-1c8e-4a5f-addd-5ea8188eb297_Wallpaper.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\3a7ea9cd-93fe-4529-bc73-0fde46417e8a_WhatsApp Image 2023-03-01 at 08.23.521.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>EmployeeManagement</SourceId>

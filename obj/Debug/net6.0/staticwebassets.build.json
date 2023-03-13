@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+5nP2YKzbPJRFnbKxHkIlVAu8PSWJedsAuQRkxJqveI=",
+  "Hash": "R7zhCEtQBEycM5tFx1yq0kjiJw+mOALHvHQQsJzlv4M=",
   "Source": "EmployeeManagement",
   "BasePath": "_content/EmployeeManagement",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\foo.html"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\14779082-1c8e-4a5f-addd-5ea8188eb297_Wallpaper.jpg",
+      "SourceId": "EmployeeManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\",
+      "BasePath": "_content/EmployeeManagement",
+      "RelativePath": "images/14779082-1c8e-4a5f-addd-5ea8188eb297_Wallpaper.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\14779082-1c8e-4a5f-addd-5ea8188eb297_Wallpaper.jpg"
     },
     {
       "Identity": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\3a7ea9cd-93fe-4529-bc73-0fde46417e8a_WhatsApp Image 2023-03-01 at 08.23.521.jpg",

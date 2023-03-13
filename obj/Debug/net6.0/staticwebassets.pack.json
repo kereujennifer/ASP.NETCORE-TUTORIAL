@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\foo.html"
     },
     {
+      "Id": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\14779082-1c8e-4a5f-addd-5ea8188eb297_Wallpaper.jpg",
+      "PackagePath": "staticwebassets\\images\\14779082-1c8e-4a5f-addd-5ea8188eb297_Wallpaper.jpg"
+    },
+    {
       "Id": "C:\\Users\\hp\\source\\repos\\Asp.Net-Tutorials\\wwwroot\\images\\3a7ea9cd-93fe-4529-bc73-0fde46417e8a_WhatsApp Image 2023-03-01 at 08.23.521.jpg",
       "PackagePath": "staticwebassets\\images\\3a7ea9cd-93fe-4529-bc73-0fde46417e8a_WhatsApp Image 2023-03-01 at 08.23.521.jpg"
     },
