@@ -141,3 +141,7 @@ C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\xunit.abstractions.d
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\xunit.core.dll
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Microsoft.Exchange.WebServices.Auth.dll
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Microsoft.Exchange.WebServices.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\IdentityModel.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\IdentityServer4.EntityFramework.Storage.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\IdentityServer4.Storage.dll

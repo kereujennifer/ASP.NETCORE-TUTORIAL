@@ -43,6 +43,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "IdentityServer4.EntityFramework.Storage": {
+              "target": "Package",
+              "version": "[4.1.2, )"
+            },
             "IppDotNetSdkForQuickBooksApiV3": {
               "target": "Package",
               "version": "[14.6.3.4, )"
