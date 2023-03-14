@@ -57,6 +57,11 @@ namespace EmployeeManagement
                                     .RequireClaim("Create Role")
 
                     );
+               options.AddPolicy("AdminRolePolicy",
+                    policy => policy.RequireRole("Admin")
+                                    
+
+                    );
             });
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
         
