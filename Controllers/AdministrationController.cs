@@ -32,6 +32,12 @@ namespace EmployeeManagement.Controllers
             this.logger = logger;
         }
         [HttpGet]
+        //Dry policy .No need to use allowanonymous
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
+        [HttpGet]
         public async Task<IActionResult> ManageUserClaims(string userId)
         {
             var user = await userManager.FindByIdAsync(userId);
@@ -469,6 +475,7 @@ namespace EmployeeManagement.Controllers
             }
             return RedirectToAction("EditRole", new { Id = roleId });
         }
+       
 
     }
 }
