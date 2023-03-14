@@ -50,6 +50,14 @@ namespace EmployeeManagement
                                 .Build();
                 config.Filters.Add(new AuthorizeFilter(policy));
             });
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("DeleteRolePolicy",
+                    policy => policy.RequireClaim("Delete Role")
+                                    .RequireClaim("Create Role")
+
+                    );
+            });
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
         
             
