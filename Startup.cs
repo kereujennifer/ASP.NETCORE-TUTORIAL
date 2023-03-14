@@ -52,16 +52,23 @@ namespace EmployeeManagement
             });
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("DeleteRolePolicy",
+
+                options.AddPolicy("AdminRolePolicy", policy => policy.RequireRole("Admin"));
+            
+            options.AddPolicy("DeleteRolePolicy",
                     policy => policy.RequireClaim("Delete Role")
-                                    .RequireClaim("Create Role")
+                                   
+
+                    ); options.AddPolicy("EditRolePolicy",
+                    policy => policy.RequireClaim("Edit Role")
+                                   
 
                     );
-               options.AddPolicy("AdminRolePolicy",
-                    policy => policy.RequireRole("Admin")
-                                    
+                options.AddPolicy("Create RolePolicy",
+                    policy => policy.RequireClaim("Create Role")
 
                     );
+
             });
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
         

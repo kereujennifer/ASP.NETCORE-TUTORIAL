@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeManagement.Controllers
 {
-    [Authorize(Policy = "Admin")]
+    [Authorize(Policy = "AdminRolePolicy")]
   
 
     public class AdministrationController : Controller
