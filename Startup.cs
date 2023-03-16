@@ -1,4 +1,5 @@
 using EmployeeManagement.Models;
+using EmployeeManagement.Security;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -58,18 +59,15 @@ namespace EmployeeManagement
             {
 
                 options.AddPolicy("AdminRolePolicy", policy => policy.RequireRole("Admin"));
-            
-            options.AddPolicy("DeleteRolePolicy",
-                    policy => policy.RequireClaim("Delete Role")
-                                   
 
-                    ); options.AddPolicy("EditRolePolicy",
-                    policy => policy.RequireAssertion(context => 
-                    context.User.IsInRole("Admin") && context.User.HasClaim(claim => claim.Type =="EditRole" && claim.Value == "true") || context.User.IsInRole("Super Admin") 
-                    )
-                                   
+                options.AddPolicy("DeleteRolePolicy",
+                        policy => policy.RequireClaim("Delete Role")
 
-                    );
+
+                        ); options.AddPolicy("EditRolePolicy",
+                        policy => policy.AddRequirements(new ManageAdminRolesAndClaimsRequirement())
+
+                        );
                 options.AddPolicy("Create RolePolicy",
                     policy => policy.RequireClaim("Create Role")
 
@@ -77,8 +75,10 @@ namespace EmployeeManagement
 
             });
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
-        
-            
+
+            services.AddSingleton<IAuthorizationHandler,
+      CanEditOnlyOtherAdminRolesAndClaimsHandler>();
+
         }
 
 
@@ -93,7 +93,7 @@ namespace EmployeeManagement
             {
                 app.UseExceptionHandler("/Error");
                 app.UseStatusCodePagesWithReExecute(
-                   "/Error/{0}" );
+                   "/Error/{0}");
             }
 
             app.UseStaticFiles();
@@ -102,7 +102,7 @@ namespace EmployeeManagement
             app.UseMvc(routes =>
             {
                 routes.MapRoute("default", "{controller=home}/{action=index}/{id?}");
-            
+
             });
 
 
@@ -112,3 +112,4 @@ namespace EmployeeManagement
         }
     }
 }
+
