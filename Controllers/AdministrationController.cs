@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeManagement.Controllers
 {
-    [Authorize(Policy = "AdminRolePolicy")]
+    //[Authorize(Policy = "AdminRolePolicy")]
   
 
     public class AdministrationController : Controller
@@ -354,6 +354,8 @@ namespace EmployeeManagement.Controllers
             return View(roles);
         }
         [HttpGet]
+        [Authorize(Roles = "EditRolePolicy")]
+
         public async Task<IActionResult> EditRole(string id)
         {
             var role = await roleManager.FindByIdAsync(id);
