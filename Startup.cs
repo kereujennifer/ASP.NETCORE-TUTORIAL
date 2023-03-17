@@ -78,7 +78,8 @@ namespace EmployeeManagement
 
             services.AddSingleton<IAuthorizationHandler,
       CanEditOnlyOtherAdminRolesAndClaimsHandler>();
-
+            services.AddSingleton<IAuthorizationHandler,
+    SuperAdminHandler>();
         }
 
 

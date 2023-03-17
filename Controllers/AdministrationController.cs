@@ -113,7 +113,7 @@ namespace EmployeeManagement.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "EditRolePolicy")]
+       [Authorize(Policy = "EditRolePolicy")]
         public async Task<IActionResult> ManageUserRoles(string userId)
         {
             ViewBag.UserId = userId;
@@ -179,7 +179,7 @@ namespace EmployeeManagement.Controllers
 }
 
         [HttpPost]
-        [Authorize(Roles = "DeleteRolePolicy")]
+        [Authorize(Policy= "DeleteRolePolicy")]
         public async Task<IActionResult> DeleteRole(string id)
         {
             var role = await roleManager.FindByIdAsync(id);

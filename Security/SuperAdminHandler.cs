@@ -3,15 +3,19 @@ using System.Threading.Tasks;
 
 namespace EmployeeManagement.Security
 {
-    public class SuperAdminHandler: AuthorizationHandler<ManageAdminRolesAndClaimsRequirement>
+    public class SuperAdminHandler :
+     AuthorizationHandler<ManageAdminRolesAndClaimsRequirement>
     {
-        protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, ManageAdminRolesAndClaimsRequirement requirement)
+        protected override Task HandleRequirementAsync(
+            AuthorizationHandlerContext context,
+            ManageAdminRolesAndClaimsRequirement requirement)
         {
-        if(context.User.IsInRole("Super Admin"))
+            if (context.User.IsInRole("Super Admin"))
             {
                 context.Succeed(requirement);
             }
-        return Task.CompletedTask;  
+
+            return Task.CompletedTask;
         }
     }
 }
