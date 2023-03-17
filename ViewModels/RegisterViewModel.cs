@@ -10,7 +10,7 @@ namespace EmployeeManagement.ViewModels
         [Required]
         [EmailAddress]
         [Remote(action: "IsEmailInUse", controller:"Account")]
-        [ValidEmailDomain(allowedDomain:"kereu.com", ErrorMessage="Email domain name must be kereu.com")]
+        //[ValidEmailDomain(allowedDomain:"kereu.com", ErrorMessage="Email domain name must be kereu.com")]
         public string Email { get; set; }
 
         [Required]
