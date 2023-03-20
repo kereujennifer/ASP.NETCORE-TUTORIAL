@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Authentication;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace EmployeeManagement.ViewModels
 {
@@ -12,6 +14,6 @@ namespace EmployeeManagement.ViewModels
         public string Password { get; set; }
         [Display(Name ="Remember me")]
         public bool RememberMe { get; set;}
-
+        public List<AuthenticationScheme> ExternalLogins { get; internal set; }
     }
 }

@@ -42,8 +42,10 @@ namespace EmployeeManagement
             {
                 options.Password.RequiredLength = 10;
                 options.Password.RequiredUniqueChars = 3;
+                options.SignIn.RequireConfirmedEmail = true;
                 options.Password.RequireNonAlphanumeric = false;
-            }).AddEntityFrameworkStores<AppDbContext>();
+            }).AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
             services.AddMvc(config =>
             {
                 var policy = new AuthorizationPolicyBuilder()

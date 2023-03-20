@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Graph.Beta.Models;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-
+using System.Linq;
 
 namespace EmployeeManagement.Controllers
 {
@@ -62,23 +62,27 @@ namespace EmployeeManagement.Controllers
                     City = model.City
                 };
 
-                // Store user data in AspNetUsers database table
                 var result = await userManager.CreateAsync(user, model.Password);
 
-                // If user is successfully created, sign-in the user using
-                // SignInManager and redirect to index action of HomeController
                 if (result.Succeeded)
                 {
+                    var token = await userManager.GenerateEmailConfirmationTokenAsync(user);
+
+                    var confirmationLink = Url.Action("ConfirmEmail", "Account",
+                        new { userId = user.Id, token = token }, Request.Scheme);
+
+                    logger.Log(LogLevel.Warning, confirmationLink);
+
                     if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
                     {
                         return RedirectToAction("ListUsers", "Administration");
                     }
-                    await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("index", "home");
-                }
 
-                // If there are any errors, add them to the ModelState object
-                // which will be displayed by the validation summary tag helper
+                    ViewBag.ErrorTitle = "Registration successful";
+                    ViewBag.ErrorMessage = "Before you can Login, please confirm your " +
+                            "email, by clicking on the confirmation link we have emailed you";
+                    return View("Error");
+                }
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
@@ -87,7 +91,34 @@ namespace EmployeeManagement.Controllers
 
             return View(model);
         }
-        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> ConfirmEmail(string userId, string token)
+        {
+            if (userId == null || token == null)
+            {
+                return RedirectToAction("index", "home");
+            }
+
+            var user = await userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"The User ID {userId} is invalid";
+                return View("NotFound");
+            }
+
+            var result = await userManager.ConfirmEmailAsync(user, token);
+            if (result.Succeeded)
+            {
+                return View();
+            }
+
+            ViewBag.ErrorTitle = "Email cannot be confirmed";
+            return View("Error");
+        }
+
+       
+    
+    [HttpPost]
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
@@ -192,8 +223,11 @@ public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
         [AllowAnonymous]
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl)
         {
+            model.ExternalLogins =
+                   (await signInManager.GetExternalAuthenticationSchemesAsync()).ToList(); 
             if (ModelState.IsValid)
             {
+
                 
                 var result = await signInManager.PasswordSignInAsync(model.Email,model.Password,model.RememberMe,false); 
 
