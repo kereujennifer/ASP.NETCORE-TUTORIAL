@@ -145,3 +145,7 @@ C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\IdentityModel.dll
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\IdentityServer4.EntityFramework.Storage.dll
 C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\IdentityServer4.Storage.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\EntityFramework.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hp\source\repos\Asp.Net-Tutorials\bin\Debug\net6.0\Microsoft.AspNet.Identity.EntityFramework.dll
